@@ -123,6 +123,10 @@ int main(int argc, char * argv[])
         exit(1);
     }
 
+    else if (ret >= 1) {
+        printf("ff_bind suceess\n");
+    }
+
     ret = ff_listen(sockfd, MAX_EVENTS);
     if (ret < 0) {
         printf("ff_listen failed\n");
